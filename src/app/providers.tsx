@@ -6,12 +6,12 @@ import { ChakraProvider } from "@chakra-ui/react";
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <NextUIProvider>
-      <ChakraProvider>
+    <ChakraProvider>
+      <NextUIProvider>
         <ThemeProvider attribute="class" defaultTheme={"dark"}>
           {children}
         </ThemeProvider>
-      </ChakraProvider>
-    </NextUIProvider>
+      </NextUIProvider>
+    </ChakraProvider>
   );
 }

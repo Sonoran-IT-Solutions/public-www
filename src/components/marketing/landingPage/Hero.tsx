@@ -1,7 +1,11 @@
+"use client";
 import React from "react";
 import { Box, Flex, Heading, Text, VStack } from "@chakra-ui/react";
-import { Button, Image } from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 import { heroConfig } from "@/config/site";
+import image from "@/assets/images/datacenter.jpg";
+import NextImage from "next/image";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -35,7 +39,13 @@ const HeroSection = () => {
               {heroConfig.heading}
             </Heading>
             <Text fontSize="xl">{heroConfig.subheading}</Text>
-            <Button color={"primary"} radius={"full"} variant={"shadow"}>
+            <Button
+              color={"primary"}
+              radius={"full"}
+              variant={"shadow"}
+              as={Link}
+              href={"#services"}
+            >
               Discover Our Services
             </Button>
           </VStack>
@@ -45,15 +55,10 @@ const HeroSection = () => {
             maxW={{ base: "100%", md: "45%" }}
             h={{ base: "300px", md: "400px", lg: "500px" }}
           >
-            <Image
-              isZoomed
-              src="https://images.unsplash.com/photo-1558258516-12eba3ac5ec8?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            <NextImage
+              src={image}
               alt="Small business technology"
-              shadow="lg"
-              radius="lg"
-              width={"100%"}
-              height={"100%"}
-              className="object-contain"
+              className="object-contain shadow-lg rounded-large "
             />
           </Box>
         </Flex>

@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { Box, Heading, SimpleGrid, Text, VStack } from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -56,7 +58,7 @@ interface Props {
 }
 
 const ReasonCard = ({ title, icon, description }: Props) => (
-  <Card isHoverable isBlurred>
+  <Card isBlurred>
     <CardBody>
       <VStack spacing={4} align="center">
         <Box fontSize="3xl" color="yellow.500">

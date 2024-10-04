@@ -1,8 +1,11 @@
+"use client";
+
 import React from "react";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import NextImage from "next/image";
 import { introduction } from "@/config/site";
 import introImage from "@/assets/images/intro.jpg";
+
 const Introduction = () => {
   return (
     <Box as="section" py={16}>

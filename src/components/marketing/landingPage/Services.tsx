@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { Box, Heading, SimpleGrid, Text, VStack } from "@chakra-ui/react";
 import { Card, CardBody } from "@nextui-org/react";
@@ -10,8 +12,9 @@ interface Props {
   icon: IconProp;
   description: string;
 }
+
 const ServiceCard = ({ name, icon, description }: Props) => (
-  <Card isHoverable isBlurred>
+  <Card isBlurred>
     <CardBody>
       <VStack spacing={4} align="center">
         <Box fontSize="3xl" color="yellow.500">
@@ -28,23 +31,26 @@ const ServiceCard = ({ name, icon, description }: Props) => (
 
 export default function Services() {
   return (
-    <Box as="section" py={16}>
-      <Box maxW="7xl" mx="auto" px={{ base: 4, sm: 6, lg: 8 }}>
-        <Heading
-          as="h2"
-          size="2xl"
-          textAlign="center"
-          mb={12}
-          color="yellow.500"
-        >
-          {services.title}
-        </Heading>
-        <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={8}>
-          {services.items.map((service, index) => (
-            <ServiceCard key={index} {...service} />
-          ))}
-        </SimpleGrid>
+    <section id={"services"}>
+      <Box as="section" py={16}>
+        <Box maxW="7xl" mx="auto" px={{ base: 4, sm: 6, lg: 8 }}>
+          <Heading
+            as="h2"
+            id={"services"}
+            size="2xl"
+            textAlign="center"
+            mb={12}
+            color="yellow.500"
+          >
+            {services.title}
+          </Heading>
+          <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={8}>
+            {services.items.map((service, index) => (
+              <ServiceCard key={index} {...service} />
+            ))}
+          </SimpleGrid>
+        </Box>
       </Box>
-    </Box>
+    </section>
   );
 }
