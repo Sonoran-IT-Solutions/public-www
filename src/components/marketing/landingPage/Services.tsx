@@ -3,8 +3,14 @@ import { Box, Heading, SimpleGrid, Text, VStack } from "@chakra-ui/react";
 import { Card, CardBody } from "@nextui-org/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { services } from "@/config/site";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
-const ServiceCard = ({ name, icon, description }) => (
+interface Props {
+  name: string;
+  icon: IconProp;
+  description: string;
+}
+const ServiceCard = ({ name, icon, description }: Props) => (
   <Card isHoverable isBlurred>
     <CardBody>
       <VStack spacing={4} align="center">
