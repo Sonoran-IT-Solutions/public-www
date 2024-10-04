@@ -14,7 +14,7 @@ const ServiceCard = ({ name, icon, description }: Props) => (
   <Card isHoverable isBlurred>
     <CardBody>
       <VStack spacing={4} align="center">
-        <Box fontSize="3xl" color="blue.500">
+        <Box fontSize="3xl" color="yellow.500">
           <FontAwesomeIcon icon={icon} />
         </Box>
         <Heading as="h3" size="md" textAlign="center">
@@ -30,7 +30,13 @@ export default function Services() {
   return (
     <Box as="section" py={16}>
       <Box maxW="7xl" mx="auto" px={{ base: 4, sm: 6, lg: 8 }}>
-        <Heading as="h2" size="2xl" textAlign="center" mb={12}>
+        <Heading
+          as="h2"
+          size="2xl"
+          textAlign="center"
+          mb={12}
+          color="yellow.500"
+        >
           {services.title}
         </Heading>
         <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={8}>

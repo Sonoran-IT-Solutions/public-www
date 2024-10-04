@@ -1,41 +1,41 @@
+import React from "react";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import NextImage from "next/image";
 import { introduction } from "@/config/site";
-import { Image } from "@nextui-org/react";
-import { title } from "@/components/primitives";
-import { Highlight } from "@chakra-ui/react";
-export default function Introduction() {
+import introImage from "@/assets/images/intro.jpg";
+const Introduction = () => {
   return (
-    <section className="flex relative overflow-hidden lg:overflow-visible w-full flex-nowrap justify-between items-center py-4">
-      <div className="gap-16 items-center py-4 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-        <div className="sm:text-lg ">
-          <h2 className={title()}>
-            <Highlight
-              query="Sonoran IT"
-              styles={{ px: "2", py: "1", rounded: "xl", bg: "#e09f3e" }}
-            >
-              {introduction.title}
-            </Highlight>
-          </h2>
-          <p className="mb-4 text-center md:text-left w-full my-2 text-lg lg:text-xl text-default-600 block max-w-full">
+    <Box as="section" py={16}>
+      <Flex
+        maxW="7xl"
+        mx="auto"
+        px={{ base: 4, sm: 6, lg: 8 }}
+        direction={{ base: "column", md: "row" }}
+        align="center"
+        justify="space-between"
+      >
+        <Box flex="1" mr={{ base: 0, md: 8 }} mb={{ base: 8, md: 0 }}>
+          <Heading as="h1" size="2xl" mb={4} color="yellow.500">
+            {introduction.title}
+          </Heading>
+          <Text fontSize="xl" mb={6}>
             {introduction.content}
-          </p>
-        </div>
-        <div className="grid grid-cols-2 gap-4 mt-8">
-          <Image
-            isZoomed
-            isBlurred
-            className="w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
-            alt="Generic Office Picture 1"
+          </Text>
+        </Box>
+        <Box flex="1" maxW={{ base: "100%", md: "50%" }}>
+          <NextImage
+            src={introImage}
+            alt="Team collaborating on a project with a laptop in a professional setting"
+            className="rounded-xl  shadow-xl"
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
           />
-          <Image
-            isZoomed
-            isBlurred
-            className="mt-4 w-full lg:mt-10 rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
-            alt="Generic Office Picture 2"
-          />
-        </div>
-      </div>
-    </section>
+        </Box>
+      </Flex>
+    </Box>
   );
-}
+};
+
+export default Introduction;

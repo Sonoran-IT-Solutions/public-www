@@ -25,6 +25,7 @@ export const siteConfig = {
 };
 
 export const heroConfig = {
+  heading: "Empowering Your Business with IT Solutions",
   subheading:
     "At Sonoran IT Solutions, we specialize in providing essential IT services to small businesses. Whether you're just getting started with formal IT support or looking to optimize your current systems, we offer tailored solutions that keep your business running smoothly and securely. Located near South Mountain in Phoenix, we understand the unique challenges faced by local businesses and are here to help.",
 };
