@@ -1,5 +1,7 @@
 import Hero from "@/components/marketing/landingPage/Hero";
 import Introduction from "@/components/marketing/landingPage/Introduction";
+import Services from "@/components/marketing/landingPage/Services";
+import WhyChooseUsSection from "@/components/marketing/landingPage/WhyUs";
 
 export default function Home() {
   return (
@@ -7,6 +9,8 @@ export default function Home() {
       <section className="flex flex-col items-center justify-center">
         <Hero />
         <Introduction />
+        <Services />
+        <WhyChooseUsSection />
       </section>
     </main>
   );

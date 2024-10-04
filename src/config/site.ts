@@ -1,4 +1,15 @@
 export type SiteConfig = typeof siteConfig;
+import {
+  faMagnifyingGlass,
+  faHeadset,
+  faListCheck,
+  faDesktop,
+  faClipboardCheck,
+  faCloud,
+  faComputer,
+  faDiagramProject,
+  faNetworkWired,
+} from "@fortawesome/free-solid-svg-icons";
 
 export const siteConfig = {
   name: "Sonoran IT Solutions",
@@ -14,6 +25,7 @@ export const siteConfig = {
 };
 
 export const heroConfig = {
+  heading: "Empowering Your Business with IT Solutions",
   subheading:
     "At Sonoran IT Solutions, we specialize in providing essential IT services to small businesses. Whether you're just getting started with formal IT support or looking to optimize your current systems, we offer tailored solutions that keep your business running smoothly and securely. Located near South Mountain in Phoenix, we understand the unique challenges faced by local businesses and are here to help.",
 };
@@ -23,6 +35,7 @@ export const services = {
   items: [
     {
       name: "Technology Assessments",
+      icon: faMagnifyingGlass,
       description:
         "Gain insights into your current technology infrastructure and identify areas for improvement with a detailed, expert analysis.",
     },
@@ -30,14 +43,17 @@ export const services = {
       name: "Help Desk Services",
       description:
         "Reliable, around-the-clock technical support to resolve everyday IT issues quickly and efficiently.",
+      icon: faHeadset,
     },
     {
       name: "Systems Management",
       description:
         "From software updates to routine monitoring, we’ll ensure your systems run optimally without the hassle.",
+      icon: faListCheck,
     },
     {
       name: "Desktop Support",
+      icon: faComputer,
       description:
         "Hardware problems? We provide on-site and remote support to fix any issues with your computers or devices.",
     },
@@ -45,9 +61,11 @@ export const services = {
       name: "IT Asset Management",
       description:
         "Keep track of your equipment, software licenses, and more with comprehensive asset management services.",
+      icon: faClipboardCheck,
     },
     {
       name: "Desktop Virtualization",
+      icon: faDesktop,
       description:
         "Enable your team to work from anywhere with secure, cost-effective desktop virtualization solutions.",
     },
@@ -55,14 +73,17 @@ export const services = {
       name: "Cloud Services (AWS & GCP)",
       description:
         "Transform your business with the power of cloud technology, offering scalable solutions tailored to your needs.",
+      icon: faCloud,
     },
     {
       name: "Project Planning & Management",
       description:
         "From concept to completion, we’ll guide your IT projects, ensuring they are delivered on time and on budget.",
+      icon: faDiagramProject,
     },
     {
       name: "Network & Security Assessments",
+      icon: faNetworkWired,
       description:
         "Identify vulnerabilities and optimize your network for security and performance, ensuring your business is protected against threats.",
     },
