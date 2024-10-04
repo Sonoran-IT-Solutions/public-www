@@ -21,7 +21,7 @@ export function ThemeSwitcher() {
   if (!mounted) return null;
 
   return (
-    <Dropdown backdrop={"opaque"}>
+    <Dropdown>
       <DropdownTrigger>
         <Button variant={"bordered"} size={"sm"} isIconOnly={true}>
           <SunIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
@@ -29,7 +29,7 @@ export function ThemeSwitcher() {
           <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownTrigger>
-      <DropdownMenu aria-label={"Toggle Theme"}>
+      <DropdownMenu>
         <DropdownItem onClick={() => setTheme("light")}>Light</DropdownItem>
         <DropdownItem onClick={() => setTheme("dark")}>Dark</DropdownItem>
         <DropdownItem onClick={() => setTheme("system")}>System</DropdownItem>

@@ -69,6 +69,12 @@ export const services = {
   ],
 };
 
+export const introduction = {
+  title: "Welcome to Sonoran IT Solutions",
+  content:
+    "At Sonoran IT Solutions, we know that running a small business means wearing a lot of hats, but worrying about IT shouldn't be one of them. Whether you’re just getting started with technology or trying to make the most of what you already have, we provide reliable, no-nonsense IT support that’s tailor-made for businesses like yours. From non-profits to healthcare clinics, we specialize in helping organizations that might not have had formal IT services before.",
+};
+
 export const remoteWork = {
   title: "Empowering Work-from-Home Environments",
   content:
