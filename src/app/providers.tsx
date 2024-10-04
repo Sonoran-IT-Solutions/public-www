@@ -2,13 +2,16 @@
 
 import { NextUIProvider } from "@nextui-org/react";
 import { ThemeProvider } from "next-themes";
+import { ChakraProvider } from "@chakra-ui/react";
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
     <NextUIProvider>
-      <ThemeProvider attribute="class" defaultTheme={"dark"}>
-        {children}
-      </ThemeProvider>
+      <ChakraProvider>
+        <ThemeProvider attribute="class" defaultTheme={"dark"}>
+          {children}
+        </ThemeProvider>
+      </ChakraProvider>
     </NextUIProvider>
   );
 }

@@ -8,7 +8,7 @@ import heroImage from "@/assets/images/hero.jpg";
 import { Button } from "@nextui-org/react";
 export default function Hero() {
   return (
-    <section className="flex relative overflow-hidden lg:overflow-visible w-full flex-nowrap justify-between items-center h-[calc(100vh_-_64px)] 2xl:h-[calc(84vh_-_64px)]">
+    <section className="flex relative overflow-hidden lg:overflow-visible w-full flex-nowrap justify-between items-center py-4">
       <div className="flex relative z-20 flex-col gap-6 w-full lg:w-1/2 xl:mt-10">
         <div className="text-center leading-8 md:leading-10 md:text-left">
           <div className="inline-block">

@@ -1,5 +1,6 @@
 import Hero from "@/components/marketing/landingPage/Hero";
 import Introduction from "@/components/marketing/landingPage/Introduction";
+import Services from "@/components/marketing/landingPage/Services";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <section className="flex flex-col items-center justify-center">
         <Hero />
         <Introduction />
+        <Services />
       </section>
     </main>
   );
