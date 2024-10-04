@@ -1,17 +1,18 @@
 import * as React from "react";
 import { IconSvgProps } from "@/types";
 export const Logo: React.FC<IconSvgProps> = ({
-  size = 50,
+  size = 36,
   width,
   height,
   ...props
 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="36"
+    width={width || size || 25}
+    height={height || size || 25}
     viewBox="0 0 375 375"
-    height="36"
     version="1.0"
+    {...props}
   >
     <defs>
       <clipPath id="a">

@@ -1,5 +1,4 @@
 export type SiteConfig = typeof siteConfig;
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 export const siteConfig = {
   name: "Sonoran IT Solutions",
