@@ -24,7 +24,9 @@ export const Navbar = () => {
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-4" href="/">
             <Logo />
-            <p className="font-bold text-inherit">Sonoran IT</p>
+            <span className="font-bold text-inherit text-yellow-500">
+              Sonoran IT Solutions, LLC
+            </span>
           </NextLink>
         </NavbarBrand>
         {siteConfig.navItems.map((item) => (

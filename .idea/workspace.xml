@@ -5,18 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ca8f9db-e213-4720-b495-a3ee82569969" name="Changes" comment="Setup NextUI">
-      <change afterPath="$PROJECT_DIR$/src/components/Logo.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ThemeSwitcher.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/site.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/marketing/landingPage/Hero.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/marketing/landingPage/Introduction.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/primitives.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/faq.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/providers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/providers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ThemeSwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ThemeSwitcher.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/site.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/site.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +29,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
       </list>
     </option>
@@ -56,7 +59,7 @@
     "ACTIVE_CLOUD_PROJECT_NAME": "common",
     "ACTIVE_CLOUD_PROJECT_NUMBER": "837377322214",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.google.cloudcode.ide_session_index": "20241003_0000",
+    "com.google.cloudcode.ide_session_index": "20241004_0001",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
@@ -77,7 +80,7 @@
       <window_info id="Merge Requests" show_stripe_button="false" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" show_stripe_button="false" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.122294374" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.122294374" />
       <window_info id="Commit" order="1" weight="0.122294374" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="TypeScript" show_stripe_button="false" />
@@ -86,7 +89,7 @@
       <window_info anchor="bottom" id="Find" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
-      <window_info active="true" anchor="bottom" id="Problems View" order="2" visible="true" weight="0.32984582" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.32984582" />
       <window_info anchor="bottom" id="Terminal" order="3" weight="0.32984582" />
       <window_info anchor="bottom" id="Run" order="4" weight="0.32984582" />
       <window_info anchor="bottom" id="Services" order="5" />
@@ -143,7 +146,8 @@
       <option name="presentableId" value="Default" />
       <updated>1727921300879</updated>
       <workItem from="1727921302127" duration="7633000" />
-      <workItem from="1728018407116" duration="8019000" />
+      <workItem from="1728018407116" duration="15309000" />
+      <workItem from="1728057702651" duration="13000" />
     </task>
     <task id="LOCAL-00001" summary="Setup NextUI">
       <option name="closed" value="true" />
