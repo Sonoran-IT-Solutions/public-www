@@ -4,6 +4,7 @@ import React from "react";
 import { Box, Flex, Text } from "@chakra-ui/react";
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import { faqs } from "@/content/faq";
+import { XIcon, PlusIcon, X } from "lucide-react";
 
 const FAQSection = () => {
   return (
@@ -15,7 +16,12 @@ const FAQSection = () => {
         direction={{ base: "column", md: "row" }}
       >
         <Box flex={1} mb={{ base: 8, md: 0 }} pr={{ base: 0, md: 8 }}>
-          <Text fontSize="5xl" fontWeight="bold" lineHeight="1.2">
+          <Text
+            fontSize="5xl"
+            fontWeight="bold"
+            lineHeight="1.2"
+            color={"yellow.500"}
+          >
             Frequently asked questions
           </Text>
         </Box>
@@ -29,6 +35,7 @@ const FAQSection = () => {
               <AccordionItem
                 key={index}
                 aria-label={faq.question}
+                indicator={({ isOpen }) => (isOpen ? <XIcon /> : <PlusIcon />)}
                 title={<Text fontWeight="medium">{faq.question}</Text>}
               >
                 <Text>{faq.answer}</Text>
