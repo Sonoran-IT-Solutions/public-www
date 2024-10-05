@@ -1,11 +1,12 @@
 "use client";
 import React from "react";
 import { Box, Flex, Heading, Text, VStack } from "@chakra-ui/react";
-import { Button } from "@nextui-org/react";
 import { heroConfig } from "@/config/site";
 import image from "@/assets/images/datacenter.jpg";
 import NextImage from "next/image";
 import Link from "next/link";
+import { RainbowButton } from "@/components/ui/rainbow-button";
+import BlurFade from "@/components/ui/blur-fade";
 
 const HeroSection = () => {
   return (
@@ -29,25 +30,23 @@ const HeroSection = () => {
             maxW={{ base: "100%", md: "50%" }}
             mb={{ base: 12, md: 0 }}
           >
-            <Heading
-              as="h1"
-              size="3xl"
-              color="yellow.500"
-              fontWeight="bold"
-              lineHeight="shorter"
-            >
-              {heroConfig.heading}
-            </Heading>
-            <Text fontSize="xl">{heroConfig.subheading}</Text>
-            <Button
-              color={"primary"}
-              radius={"full"}
-              variant={"shadow"}
-              as={Link}
-              href={"#services"}
-            >
-              Discover Our Services
-            </Button>
+            <BlurFade delay={0.25} inView>
+              <Heading
+                as="h1"
+                size="3xl"
+                color="yellow.500"
+                fontWeight="bold"
+                lineHeight="shorter"
+              >
+                {heroConfig.heading}
+              </Heading>
+            </BlurFade>
+            <BlurFade delay={0.25 * 2} inView>
+              <Text fontSize="xl">{heroConfig.subheading}</Text>
+              <RainbowButton>
+                <Link href={"#services"}>Discover Our Services</Link>
+              </RainbowButton>
+            </BlurFade>
           </VStack>
 
           {/* Image */}
@@ -55,11 +54,13 @@ const HeroSection = () => {
             maxW={{ base: "100%", md: "45%" }}
             h={{ base: "300px", md: "400px", lg: "500px" }}
           >
-            <NextImage
-              src={image}
-              alt="Small business technology"
-              className="object-contain shadow-lg rounded-large "
-            />
+            <BlurFade delay={0.25 * 2.5} inView>
+              <NextImage
+                src={image}
+                alt="Small business technology"
+                className="object-contain shadow-lg rounded-large "
+              />
+            </BlurFade>
           </Box>
         </Flex>
       </Box>
